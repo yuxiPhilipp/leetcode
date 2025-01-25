@@ -7,8 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F847F9412D317E5A002E98DB /* 02_linked_lilst.c in Sources */ = {isa = PBXBuildFile; fileRef = F847F9402D317E5A002E98DB /* 02_linked_lilst.c */; };
+		F847F9442D359D5D002E98DB /* 03_stack.c in Sources */ = {isa = PBXBuildFile; fileRef = F847F9432D359D5D002E98DB /* 03_stack.c */; };
+		F847F9472D35BD25002E98DB /* 04_queue.c in Sources */ = {isa = PBXBuildFile; fileRef = F847F9462D35BD25002E98DB /* 04_queue.c */; };
+		F847F94B2D361AF6002E98DB /* 06_string_01_basic.c in Sources */ = {isa = PBXBuildFile; fileRef = F847F94A2D361AF6002E98DB /* 06_string_01_basic.c */; };
+		F847F94E2D361B12002E98DB /* 06_string_03_trie.c in Sources */ = {isa = PBXBuildFile; fileRef = F847F94D2D361B12002E98DB /* 06_string_03_trie.c */; };
+		F847F9512D3B104F002E98DB /* 01_array_easy.c in Sources */ = {isa = PBXBuildFile; fileRef = F847F9502D3B104E002E98DB /* 01_array_easy.c */; };
+		F847F9542D3B1066002E98DB /* 01_array_med.c in Sources */ = {isa = PBXBuildFile; fileRef = F847F9532D3B1066002E98DB /* 01_array_med.c */; };
+		F847F9562D3B174D002E98DB /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = F847F9552D3B174D002E98DB /* common.c */; };
+		F8EC77382D3D73F3000944A3 /* 02_linked_list_tow_ptr.c in Sources */ = {isa = PBXBuildFile; fileRef = F8EC77372D3D73F3000944A3 /* 02_linked_list_tow_ptr.c */; };
+		F8EC773B2D4053EB000944A3 /* 09_06_bit_op_easy.c in Sources */ = {isa = PBXBuildFile; fileRef = F8EC773A2D4053EB000944A3 /* 09_06_bit_op_easy.c */; };
+		F8EC773E2D41DFCE000944A3 /* 02_linked_list_easy.c in Sources */ = {isa = PBXBuildFile; fileRef = F8EC773D2D41DFCE000944A3 /* 02_linked_list_easy.c */; };
 		F8F00D782D2B054C003437F2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F8F00D772D2B054C003437F2 /* main.c */; };
 		F8F00D802D2B060B003437F2 /* 01_Array.c in Sources */ = {isa = PBXBuildFile; fileRef = F8F00D7F2D2B060B003437F2 /* 01_Array.c */; };
+		F8F00D832D2CB713003437F2 /* 07_binary_tree.c in Sources */ = {isa = PBXBuildFile; fileRef = F8F00D822D2CB713003437F2 /* 07_binary_tree.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +36,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F847F93F2D317E5A002E98DB /* 02_linked_lilst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 02_linked_lilst.h; sourceTree = "<group>"; };
+		F847F9402D317E5A002E98DB /* 02_linked_lilst.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 02_linked_lilst.c; sourceTree = "<group>"; };
+		F847F9422D359D5D002E98DB /* 03_stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 03_stack.h; sourceTree = "<group>"; };
+		F847F9432D359D5D002E98DB /* 03_stack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 03_stack.c; sourceTree = "<group>"; };
+		F847F9452D35BD25002E98DB /* 04_queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 04_queue.h; sourceTree = "<group>"; };
+		F847F9462D35BD25002E98DB /* 04_queue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 04_queue.c; sourceTree = "<group>"; };
+		F847F9482D35BD6F002E98DB /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		F847F9492D361AF6002E98DB /* 06_string_01_basic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 06_string_01_basic.h; sourceTree = "<group>"; };
+		F847F94A2D361AF6002E98DB /* 06_string_01_basic.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 06_string_01_basic.c; sourceTree = "<group>"; };
+		F847F94C2D361B12002E98DB /* 06_string_03_trie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 06_string_03_trie.h; sourceTree = "<group>"; };
+		F847F94D2D361B12002E98DB /* 06_string_03_trie.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 06_string_03_trie.c; sourceTree = "<group>"; };
+		F847F94F2D3B104E002E98DB /* 01_array_easy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01_array_easy.h; sourceTree = "<group>"; };
+		F847F9502D3B104E002E98DB /* 01_array_easy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 01_array_easy.c; sourceTree = "<group>"; };
+		F847F9522D3B1066002E98DB /* 01_array_med.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01_array_med.h; sourceTree = "<group>"; };
+		F847F9532D3B1066002E98DB /* 01_array_med.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 01_array_med.c; sourceTree = "<group>"; };
+		F847F9552D3B174D002E98DB /* common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		F8EC77362D3D73F3000944A3 /* 02_linked_list_tow_ptr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 02_linked_list_tow_ptr.h; sourceTree = "<group>"; };
+		F8EC77372D3D73F3000944A3 /* 02_linked_list_tow_ptr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 02_linked_list_tow_ptr.c; sourceTree = "<group>"; };
+		F8EC77392D4053EB000944A3 /* 09_06_bit_op_easy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 09_06_bit_op_easy.h; sourceTree = "<group>"; };
+		F8EC773A2D4053EB000944A3 /* 09_06_bit_op_easy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 09_06_bit_op_easy.c; sourceTree = "<group>"; };
+		F8EC773C2D41DFCE000944A3 /* 02_linked_list_easy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 02_linked_list_easy.h; sourceTree = "<group>"; };
+		F8EC773D2D41DFCE000944A3 /* 02_linked_list_easy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 02_linked_list_easy.c; sourceTree = "<group>"; };
 		F8F00D742D2B054C003437F2 /* 数据结构 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "数据结构"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F00D772D2B054C003437F2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		F8F00D7E2D2B060B003437F2 /* 01_Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01_Array.h; sourceTree = "<group>"; };
 		F8F00D7F2D2B060B003437F2 /* 01_Array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 01_Array.c; sourceTree = "<group>"; };
+		F8F00D812D2CB713003437F2 /* 07_binary_tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 07_binary_tree.h; sourceTree = "<group>"; };
+		F8F00D822D2CB713003437F2 /* 07_binary_tree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 07_binary_tree.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +97,32 @@
 			isa = PBXGroup;
 			children = (
 				F8F00D772D2B054C003437F2 /* main.c */,
+				F847F9482D35BD6F002E98DB /* common.h */,
+				F847F9552D3B174D002E98DB /* common.c */,
 				F8F00D7E2D2B060B003437F2 /* 01_Array.h */,
 				F8F00D7F2D2B060B003437F2 /* 01_Array.c */,
+				F847F94F2D3B104E002E98DB /* 01_array_easy.h */,
+				F847F9502D3B104E002E98DB /* 01_array_easy.c */,
+				F847F9522D3B1066002E98DB /* 01_array_med.h */,
+				F847F9532D3B1066002E98DB /* 01_array_med.c */,
+				F847F93F2D317E5A002E98DB /* 02_linked_lilst.h */,
+				F847F9402D317E5A002E98DB /* 02_linked_lilst.c */,
+				F8EC773C2D41DFCE000944A3 /* 02_linked_list_easy.h */,
+				F8EC773D2D41DFCE000944A3 /* 02_linked_list_easy.c */,
+				F8EC77362D3D73F3000944A3 /* 02_linked_list_tow_ptr.h */,
+				F8EC77372D3D73F3000944A3 /* 02_linked_list_tow_ptr.c */,
+				F847F9422D359D5D002E98DB /* 03_stack.h */,
+				F847F9432D359D5D002E98DB /* 03_stack.c */,
+				F847F9452D35BD25002E98DB /* 04_queue.h */,
+				F847F9462D35BD25002E98DB /* 04_queue.c */,
+				F847F9492D361AF6002E98DB /* 06_string_01_basic.h */,
+				F847F94A2D361AF6002E98DB /* 06_string_01_basic.c */,
+				F847F94C2D361B12002E98DB /* 06_string_03_trie.h */,
+				F847F94D2D361B12002E98DB /* 06_string_03_trie.c */,
+				F8F00D812D2CB713003437F2 /* 07_binary_tree.h */,
+				F8F00D822D2CB713003437F2 /* 07_binary_tree.c */,
+				F8EC77392D4053EB000944A3 /* 09_06_bit_op_easy.h */,
+				F8EC773A2D4053EB000944A3 /* 09_06_bit_op_easy.c */,
 			);
 			path = "数据结构";
 			sourceTree = "<group>";
@@ -125,6 +185,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F00D802D2B060B003437F2 /* 01_Array.c in Sources */,
+				F847F9472D35BD25002E98DB /* 04_queue.c in Sources */,
+				F847F9562D3B174D002E98DB /* common.c in Sources */,
+				F847F9512D3B104F002E98DB /* 01_array_easy.c in Sources */,
+				F847F9542D3B1066002E98DB /* 01_array_med.c in Sources */,
+				F847F9442D359D5D002E98DB /* 03_stack.c in Sources */,
+				F8EC77382D3D73F3000944A3 /* 02_linked_list_tow_ptr.c in Sources */,
+				F847F9412D317E5A002E98DB /* 02_linked_lilst.c in Sources */,
+				F8EC773E2D41DFCE000944A3 /* 02_linked_list_easy.c in Sources */,
+				F8EC773B2D4053EB000944A3 /* 09_06_bit_op_easy.c in Sources */,
+				F847F94B2D361AF6002E98DB /* 06_string_01_basic.c in Sources */,
+				F847F94E2D361B12002E98DB /* 06_string_03_trie.c in Sources */,
+				F8F00D832D2CB713003437F2 /* 07_binary_tree.c in Sources */,
 				F8F00D782D2B054C003437F2 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
