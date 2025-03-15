@@ -14,12 +14,30 @@ void run_array(void);
 #endif /* _1_Array_h */
 
 /**
+ 
+ 
+ 内存模型: 数组, 连续的内存地址空间.
+ 数组特点: 数组, 必须知道长度
+ 
+ 数组作为参数的演变.
+  一维数组, 二维数组
+ int n[10] ===fun===> int n[] or *n
+ int n[2][10] ====fun====> int n[][10]: 表示是一个数组. 步长是10
+ int n[2][10] ====fun====> int **n: 表示是一个 指向一段连续的(int*) 内存 的指针.  *(n+1) 并不表示一个n[1][10]的地址.
+ 
+ 数组的内存模型:
+ 1 stack 模型: 小规模,临时使用; 二维数组 (caller--> callee , 但是callee ---x---> caller stack上的内存带不出来.
+ 2 heap 模型: 携带大量数据, 再不同的函数之间传递数据.
+    尤其是二维数组的增删改差.
+ 
   对于 array 下标基本就是指针
     [0, ... , size-1] size]
  
  1# 双下标 i_slow [0, size-1]
  本质: 讨论元素之间的关系
  应用: 数组中,两数只和(差, 乘积)
+     使用数组 当作大数值. 比如超越64bit 的大整数.
+ 
 
   //双下标 for循环结构
  int* twoSum(int* nums, int numsSize, int target, int* returnSize) {

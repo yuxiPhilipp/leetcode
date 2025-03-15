@@ -32,7 +32,7 @@ int main(int argc, const char * argv[]) {
 //    run_linked_list_two_ptr();
 //    run_queue();
 //    run_trie();
-//    run_string();
-    run_bit_op_easy();
+    run_string();
+//    run_bit_op_easy();
     return 0;
 }

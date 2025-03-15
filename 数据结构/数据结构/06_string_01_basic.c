@@ -401,13 +401,128 @@ void str_0014_test (void)
     str_0014_longest_common_prefix(strs, 3, ret_buff);
     printf("common prefix: %s\n", ret_buff);
 }
+
+int check_arr(int* arr, int arr_len, int k)
+{
+    int i, max_sub=-1, total =0 ;
+    for (i =0 ; i< arr_len; i++) {
+        max_sub = max_sub>arr[i] ?max_sub :i;
+    }
+    for (i =0 ; i< arr_len; i++) {
+        if(i == max_sub) {
+            continue;
+        }
+        total += arr[i];
+    }
+    if (total<= k) {
+        return arr[max_sub] + total;
+    } else {
+        return -1;
+    }
+}
+int characterReplacement(char* s, int k) {
+    int diff_char = 0;
+    int h,t, str_len = strlen(s);
+    int arr[26] ={0};
+    int tmp_max_len =0, ret = 0 ;
+
+    for(h=0; h<str_len-1; h ++) {
+        for(t = h; t<str_len; t++) {
+            arr[s[t] -'A'] += 1;
+            tmp_max_len = check_arr(arr, 26, k);
+//            printf("h=%d, t=%d, tmp_max_len = %d\n",h,t, tmp_max_len);
+            if ( tmp_max_len > 0) {
+                // can continue
+            } else {
+                //reach window size limit
+                break;
+            }
+            printf("ret = %d, tmp_max_len =%d\n", ret, tmp_max_len);
+            ret = ret>tmp_max_len?ret:tmp_max_len;
+
+        }
+
+        memset(arr,0, sizeof(char)*26);
+    }
+    printf("ret = %d\n", ret);
+    return ret;
+}
+void str_0424_test()
+{
+    characterReplacement("AABABBA", 1);
+    
+}
+
+int check_str_anagrams (char *s, int s_len, char* p) {
+    // option: for debug
+    char buff[SIZE_BUF] = {0};
+    snprintf(buff,s_len+1, "%s",s); // +1 : '\0'
+    printf("%s\n", buff);
+    
+    int arr[26] = {0}, i ;
+    for (i=0;i < s_len; i++) {
+        arr[s[i]-'a'] ++;
+    }
+    for (i=0;i< strlen(p); i++) {
+        arr[p[i] -'a'] --;
+        if (arr[p[i] -'a'] < 0 ) {
+            //not match
+            return -1;
+        } //else continue
+    }
+    
+    return 0;
+}
+int* findAnagrams(char* s, char* p, int* returnSize) {
+    int i, window_size, check_rc;
+    
+    //memory
+    int mem_size =0, mem_i= 0 ;
+    int *ret_mem = NULL; // alloc for return
+
+
+    window_size = strlen(p);
+    for (i=0; i<= strlen(s) -window_size ;i++) {
+        check_rc = check_str_anagrams(s+i, window_size, p);
+        if (check_rc == 0) {
+            //record subscript
+            mem_size ++;
+        }
+    }
+    printf("fill subscript\n");
+    if (mem_size != 0) {
+        ret_mem = (int *)malloc(sizeof(int) * mem_size);
+        
+        for (i=0; i<= strlen(s) -window_size ;i++) {
+            check_rc = check_str_anagrams(s+i, window_size, p);
+            if (check_rc == 0) {
+                //record subscript
+                ret_mem[mem_i++] = i;
+            }
+        }
+        *returnSize =mem_size;
+    }
+    return ret_mem;
+}
+void str_0438_test()
+{
+    int * ret_arr = NULL;
+    int ret_arr_len;
+    ret_arr = findAnagrams("abab", "ab", &ret_arr_len);
+    array_print_int(ret_arr,ret_arr_len );
+}
 void run_string(void)
 {
+    int num= 0x12345678;
+    printf("num=%p, p[0]=%x =%p",
+           &num, *((char*)&num), ((char*)&num) );
 //    str_0125_test();
 //    str_0344_test();
-//    str_0557_test();
+//    str_0557_test(); //反转字符串 和 每个单词
 //    str_0415_test();
 //    str_0014_test();
+//    str_0424_test();
+    str_0438_test();
     
     
 }
